@@ -2,3 +2,39 @@ baseURL = 'https://skyforest.org/'
 languageCode = 'zh_CN' # en-us
 title = '小森林'
 theme = 'ananke'
+
+[[menu.main]]             # config your menu              # 配置目录
+  name = "主页"
+  weight = 10
+  identifier = "home"
+  pageref = "/"
+[[menu.main]]
+  name = "全部文章"
+  weight = 20
+  identifier = "archives"
+  pageref = "/posts/"
+[[menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  pageref = "/tags/"
+[[menu.main]]
+  name = "分类"
+  weight = 40
+  identifier = "categories"
+  pageref = "/categories/"
+[[menu.main]]
+  name = "关于"
+  weight = 45
+  identifier = "about"
+  url = "/about/"
+[[menu.main]]
+  name = "致谢"
+  weight = 50
+  identifier = "acknowledgments"
+  url = "/acknowledgments/"
+[[menu.main]]
+  name = "订阅"
+  weight = 60
+  identifier = "feed"
+  url = "/index.xml"
